@@ -1,1 +1,25 @@
-<p>properties works!</p>
+<mat-grid-list cols="2" rowHeight="600px" gutterSize="10px">
+
+    <mat-grid-tile>
+        <div class="property-list">
+            <mat-card *ngFor="let property of properties" class="property-card">
+
+                <mat-card-header>
+                    <mat-card-title>{{ property.name }}</mat-card-title>
+                    <mat-card-content>{{ property.address }}</mat-card-content>
+                </mat-card-header>
+                
+                <img mat-card-image [src]="property.imageUrl" alt="Image of {{ property.name }}">
+
+                <mat-card-content>
+                    <p>Some description about the property can go here.</p>
+                </mat-card-content>
+
+            </mat-card>
+        </div>
+    </mat-grid-tile>
+  
+    <mat-grid-tile>
+      <google-map [center]="center" [zoom]="zoom" height="600px" width="100%"></google-map>
+    </mat-grid-tile>
+</mat-grid-list>
