@@ -1,8 +1,13 @@
+<mat-form-field>
+    <mat-label>Search</mat-label>
+    <input matInput>
+</mat-form-field>
+
 <mat-grid-list cols="2" rowHeight="600px" gutterSize="10px">
 
     <mat-grid-tile>
         <div class="property-list">
-            <mat-card *ngFor="let property of properties" class="property-card">
+            <mat-card *ngFor="let property of properties" class="property-card" (click)="onPropertyClick(property)">
 
                 <mat-card-header>
                     <mat-card-title>{{ property.name }}</mat-card-title>
@@ -20,6 +25,8 @@
     </mat-grid-tile>
   
     <mat-grid-tile>
-      <google-map [center]="center" [zoom]="zoom" height="600px" width="100%"></google-map>
+      <google-map [center]="center" [zoom]="zoom" height="600px" width="100%">
+        <map-marker *ngIf="selectedProperty" [position]="selectedProperty"></map-marker>
+      </google-map>
     </mat-grid-tile>
 </mat-grid-list>
