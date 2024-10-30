@@ -20,6 +20,18 @@
                     <p>Some description about the property can go here.</p>
                 </mat-card-content>
 
+                <!-- Expandable details section -->
+                <div *ngIf="selectedProperty?.id === property.id" class="property-details">
+                    <p>{{ property.description }}</p>
+                    <div class="extra-images">
+                        <img *ngFor="let img of property.extraImages; let i = index" 
+                        [src]="img" 
+                        alt="Extra image" 
+                        class="extra-image" 
+                        (click)="openImageViewer(property, i)">
+                    </div>
+                </div>
+
             </mat-card>
         </div>
     </mat-grid-tile>

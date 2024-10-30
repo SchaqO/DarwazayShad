@@ -45,3 +45,27 @@ google-map {
     flex-direction: column;
     align-items: flex-start;
 }
+
+.property-details {
+    padding: 10px;
+    border-top: 1px solid #ccc; // Optional: separates details visually
+}
+  
+  .extra-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+  .extra-image {
+    width: 100px; // Adjust the size as needed
+    margin: 5px;
+    border-radius: 4px; // Optional: adds a border radius
+    &:hover {
+        transform: scale(1.02); // Slightly enlarges the card on hover
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Adds a shadow for a lift effect
+    }
+
+    &:active {
+        transform: scale(0.98); // Slightly shrinks the card when clicked for a pressed effect
+    }
+}

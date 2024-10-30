@@ -1,0 +1,55 @@
+.image-viewer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; // Position relative for absolute positioning of arrows
+    width: 100%; // Full width of the dialog
+    height: auto;
+    max-width: 800px; // Max width for larger screens
+    max-height: 600px; // Max height for larger screens
+    overflow: hidden; // Hide overflow to maintain aesthetics
+    background-color: white; // Set a background color for better visibility
+    border-radius: 8px; // Optional: Rounded corners
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Optional: Add shadow for depth
+
+}
+  
+.main-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; // Maintain aspect ratio
+}
+  
+.arrow {
+    position: absolute;
+    top: 50%; // Center vertically
+    transform: translateY(-50%); // Adjust for centering
+    background-color: rgba(255, 255, 255, 0.7); // Semi-transparent background
+    border: none;
+    border-radius: 50%; // Circular button
+    cursor: pointer;
+    z-index: 1; // Ensure buttons are above the image
+    padding: 10px;
+    
+&.left {
+      left: 10px; // Position to the left
+}
+    
+&.right {
+      right: 10px; // Position to the right
+}
+    
+mat-icon {
+      font-size: 24px; // Adjust icon size as needed
+}
+  
+&:hover {
+      background-color: rgba(255, 255, 255, 0.9); // Change background on hover
+}
+  
+&:disabled {
+      opacity: 0.5; // Make it semi-transparent when disabled
+      cursor: not-allowed; // Change cursor to not-allowed
+}
+
+}

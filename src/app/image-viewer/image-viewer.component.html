@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>Property Images</h2>
+<mat-dialog-content>
+  <div class="image-viewer">
+    <button class="arrow left" (click)="previousImage()" [disabled]="currentIndex === 0">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <img [src]="data.images[currentIndex]" alt="Property Image" class="main-image">
+
+    <button class="arrow right" (click)="nextImage()" [disabled]="currentIndex === data.images.length - 1">
+      <mat-icon>arrow_forward</mat-icon>
+    </button>
+
+  </div>
+  <p>{{ "More details come here" }}</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-flat-button (click)="close()">Close</button>
+</mat-dialog-actions>
