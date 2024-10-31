@@ -1,43 +1,79 @@
-<mat-form-field>
-    <mat-label>Search</mat-label>
-    <input matInput>
-</mat-form-field>
-
-<mat-grid-list cols="2" rowHeight="600px" gutterSize="10px">
+<mat-grid-list cols="2" gutterSize="5px">
 
     <mat-grid-tile>
-        <div class="property-list">
-            <mat-card *ngFor="let property of properties" class="property-card" (click)="onPropertyClick(property)">
 
-                <mat-card-header>
-                    <mat-card-title>{{ property.name }}</mat-card-title>
-                    <mat-card-content>{{ property.address }}</mat-card-content>
-                </mat-card-header>
-                
-                <img mat-card-image [src]="property.imageUrl" alt="Image of {{ property.name }}">
+        <div class="property-container">
 
-                <mat-card-content>
-                    <p>Some description about the property can go here.</p>
-                </mat-card-content>
+            <div class="top-row"> 
+                <mat-form-field class="search-bar">
+                    <mat-label>Search</mat-label>
+                    <input matInput>
+                </mat-form-field>
 
-                <!-- Expandable details section -->
-                <div *ngIf="selectedProperty?.id === property.id" class="property-details">
-                    <p>{{ property.description }}</p>
-                    <div class="extra-images">
-                        <img *ngFor="let img of property.extraImages; let i = index" 
-                        [src]="img" 
-                        alt="Extra image" 
-                        class="extra-image" 
-                        (click)="openImageViewer(property, i)">
+                <div class="sort-button-container">
+                    <button mat-flat-button [matMenuTriggerFor]="menu" class="sort-button">Sort</button>
+                    <mat-menu #menu="matMenu" xPosition="before">
+                        <button mat-menu-item>By Date</button>
+                        <button mat-menu-item>By Price</button>
+                        <button mat-menu-item [matMenuTriggerFor]="area">By Area</button>
+                        <button mat-menu-item [matMenuTriggerFor]="districts">District</button>
+                    </mat-menu>
+                    <mat-menu #districts="matMenu" xPosition="before">
+                        <button mat-menu-item>Sarchnar</button>
+                        <button mat-menu-item>Bakrajo</button>
+                        <button mat-menu-item>Baxtiary</button>
+                        <button mat-menu-item>Rapareen</button>
+                        <button mat-menu-item>Saholaka</button>
+                        <button mat-menu-item>Ashti</button>
+                        <button mat-menu-item>Bazar</button>
+                    </mat-menu>
+                    <mat-menu #area="matMenu" xPosition="before">
+                        <button mat-menu-item>From biggest</button>
+                        <button mat-menu-item>From smallest</button> 
+                        <button mat-menu-item>0 - 100</button>
+                        <button mat-menu-item>100 - 200</button>
+                        <button mat-menu-item>200 - 300</button>
+                        <button mat-menu-item>300 - 500</button>
+                        <button mat-menu-item>500 - 1000</button>
+                        <button mat-menu-item>1000+</button>
+                    </mat-menu>
+                </div>  
+
+            </div>
+
+            <div class="property-list">
+                <mat-card *ngFor="let property of properties" class="property-card" (click)="onPropertyClick(property)">
+
+                    <mat-card-header>
+                        <mat-card-title>{{ property.name }}</mat-card-title>
+                        <mat-card-content>{{ property.address }}</mat-card-content>
+                    </mat-card-header>
+                    
+                    <img mat-card-image [src]="property.imageUrl" alt="Image of {{ property.name }}">
+
+                    <mat-card-content>
+                        <p>Some description about the property can go here.</p>
+                    </mat-card-content>
+
+                    <!-- Expandable details section -->
+                    <div *ngIf="selectedProperty?.id === property.id" class="property-details">
+                        <p>{{ property.description }}</p>
+                        <div class="extra-images">
+                            <img *ngFor="let img of property.extraImages; let i = index" 
+                            [src]="img" 
+                            alt="Extra image" 
+                            class="extra-image" 
+                            (click)="openImageViewer(property, i)">
+                        </div>
                     </div>
-                </div>
+                </mat-card>
+            </div>
 
-            </mat-card>
         </div>
     </mat-grid-tile>
   
     <mat-grid-tile>
-      <google-map [center]="center" [zoom]="zoom" height="600px" width="100%">
+      <google-map [center]="center" [zoom]="zoom" height="100%" width="100%">
         <map-marker *ngIf="selectedProperty" [position]="selectedProperty"></map-marker>
       </google-map>
     </mat-grid-tile>

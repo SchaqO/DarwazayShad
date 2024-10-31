@@ -31,25 +31,53 @@
     z-index: 1; // Ensure buttons are above the image
     padding: 10px;
     
-&.left {
-      left: 10px; // Position to the left
-}
-    
-&.right {
-      right: 10px; // Position to the right
-}
-    
-mat-icon {
-      font-size: 24px; // Adjust icon size as needed
-}
-  
-&:hover {
-      background-color: rgba(255, 255, 255, 0.9); // Change background on hover
-}
-  
-&:disabled {
-      opacity: 0.5; // Make it semi-transparent when disabled
-      cursor: not-allowed; // Change cursor to not-allowed
+      &.left {
+            left: 10px; // Position to the left
+      }
+      
+      &.right {
+            right: 10px; // Position to the right
+      }
+      
+      mat-icon {
+            font-size: 24px; // Adjust icon size as needed
+      }
+      
+      &:hover {
+            background-color: rgba(255, 255, 255, 0.9); // Change background on hover
+      }
+      
+      &:disabled {
+            opacity: 0.5; // Make it semi-transparent when disabled
+            cursor: not-allowed; // Change cursor to not-allowed
+      }
 }
 
+.detailsBox {
+      margin-top: 20px;
+}
+
+.leftMatGridTile {
+      display: flex;
+      justify-content: flex-start; // Aligns content to the left within the div
+      align-items: flex-start;         // Centers content vertically within the div
+      width: 100%;  
+}
+
+.rightMatGridTile {
+      justify-content: flex-start;
+}
+
+mat-grid-tile {
+      display: flex;
+      justify-content: flex-start; // Aligns content to the left within the tile
+      align-items: flex-start;         // Centers content vertically within the tile
+}
+
+.customIcon {
+      color: green;
+}
+
+mat-list-item span[matListItemTitle] {
+      font-weight: bold;
 }

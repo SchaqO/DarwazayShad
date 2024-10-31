@@ -1,4 +1,4 @@
-<h2 mat-dialog-title>Property Images</h2>
+<h2 mat-dialog-title>Property Details</h2>
 <mat-dialog-content>
   <div class="image-viewer">
     <button class="arrow left" (click)="previousImage()" [disabled]="currentIndex === 0">
@@ -12,8 +12,74 @@
     </button>
 
   </div>
-  <p>{{ "More details come here" }}</p>
+
+
+  <div class="detailsBox"> 
+    <h3>Details: {{ data.propertyDetails.name }}</h3>
+
+    <mat-grid-list cols="2">
+      <mat-grid-tile>
+        <div class="leftMatGridTile">
+          <mat-list>
+
+            <mat-list-item>
+              <span matListItemTitle>Price </span>
+              <span matListItemLine>{{ data.propertyDetails.price }}</span>
+            </mat-list-item>
+
+            <mat-list-item>
+              <span matListItemTitle>Floors </span>
+              <span matListItemLine>{{ data.propertyDetails.floors }}</span>
+            </mat-list-item>
+
+            <mat-list-item>
+              <span matListItemTitle>Bedrooms </span>
+              <span matListItemLine>{{ data.propertyDetails.bedrooms }}</span>
+            </mat-list-item>
+
+            <mat-list-item>
+              <span matListItemTitle>Kitchen </span>
+              <span matListItemLine>{{ data.propertyDetails.kitchen }}</span>
+            </mat-list-item>
+
+          </mat-list>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile class="rightMatGridTile">
+        <div class="rightMatGridTile">
+          <mat-list>
+
+            <mat-list-item>
+              <span matListItemTitle>Hot Kitchen </span>
+              <span matListItemLine><mat-icon class="customIcon" aria-hidden="false" aria-label="Example home icon" fontIcon="check_circle_outline"></mat-icon></span>
+            </mat-list-item>
+
+            <mat-list-item>
+              <span matListItemTitle>Direction </span>
+              <span matListItemLine>{{ data.propertyDetails.direction }}</span>
+            </mat-list-item>
+
+            <mat-list-item>
+              <span matListItemTitle>Area </span>
+              <span matListItemLine>{{ data.propertyDetails.area }}</span>
+            </mat-list-item>
+
+            <mat-list-item>
+              <span matListItemTitle>Contact </span>
+              <span matListItemLine>{{ data.propertyDetails.contact }}</span>
+            </mat-list-item>
+
+          </mat-list>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+
+
 </mat-dialog-content>
+
 <mat-dialog-actions>
   <button mat-flat-button (click)="close()">Close</button>
 </mat-dialog-actions>

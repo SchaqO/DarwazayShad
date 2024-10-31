@@ -1,0 +1,224 @@
+{
+    "properties": [
+        {
+            "id": 1,
+            "name": "Property 1",
+            "address": "123 Main St",
+            "imageUrl": "/stockHouse.jpg",
+            "lat": 35.56964479232118,
+            "lng": 45.386453312323745,
+            "description": "This is where the expendable area is.",
+            "extraImages": [
+                "/interior.jpg",
+                "/bedroom.jpg",
+                "/bathroom.jpg"
+            ],
+            "price": "55 000 USD",
+            "floors": 3,
+            "bedrooms": 5,
+            "kitchen": 1,
+            "hotKitchen": "Yes",
+            "direction": "Pak City A5/15",
+            "area": "150 sqm",
+            "contact": "+964 770 123 1234"
+        },
+        {
+            "id": 2,
+            "name": "Property 2",
+            "address": "456 Park Ave",
+            "imageUrl": "/stockHouse.jpg",
+            "lat": 35.57043893921803,
+            "lng": 45.38946811521866,
+            "description": "This is where the expendable area is.",
+            "extraImages": [
+                "/interior.jpg",
+                "/bedroom.jpg",
+                "/bathroom.jpg"
+            ],
+            "price": "50 000 USD",
+            "floors": 3,
+            "bedrooms": 3,
+            "kitchen": 1,
+            "hotKitchen": "No",
+            "direction": "Pak City A5/15",
+            "area": "155 sqm",
+            "contact": "+964 770 123 1234"
+        },
+        {
+            "id": 3,
+            "name": "Property 3",
+            "address": "789 Broadway",
+            "imageUrl": "/stockHouse.jpg",
+            "lat": 48.20885491938101,
+            "lng": 16.373730141635335,
+            "description": "This is where the expendable area is.",
+            "extraImages": [
+                "/interior.jpg",
+                "/bedroom.jpg",
+                "/bathroom.jpg"
+            ],
+            "price": "50 000 USD",
+            "floors": 3,
+            "bedrooms": 5,
+            "kitchen": 1,
+            "hotKitchen": "Yes",
+            "direction": "Pak City A5/15",
+            "area": "150 sqm",
+            "contact": "+964 770 123 1234"
+        },
+        {
+            "id": 4,
+            "name": "Property 4",
+            "address": "123 Main St",
+            "imageUrl": "/stockHouse.jpg",
+            "lat": 35.583069615821415,
+            "lng": 45.38370139947592,
+            "description": "This is where the expendable area is.",
+            "extraImages": [
+                "/interior.jpg",
+                "/bedroom.jpg",
+                "/bathroom.jpg"
+            ],
+            "price": "50 000 USD",
+            "floors": 3,
+            "bedrooms": 5,
+            "kitchen": 1,
+            "hotKitchen": "Yes",
+            "direction": "Pak City A5/15",
+            "area": "150 sqm",
+            "contact": "+964 770 123 1234"
+        },
+        {
+            "id": 5,
+            "name": "Property 5",
+            "address": "456 Park Ave",
+            "imageUrl": "/stockHouse.jpg",
+            "lat": 35.56964479232118,
+            "lng": 45.386453312323745,
+            "description": "This is where the expendable area is.",
+            "extraImages": [
+                "/interior.jpg",
+                "/bedroom.jpg",
+                "/bathroom.jpg"
+            ],
+            "price": "50 000 USD",
+            "floors": 3,
+            "bedrooms": 5,
+            "kitchen": 1,
+            "hotKitchen": "Yes",
+            "direction": "Pak City A5/15",
+            "area": "150 sqm",
+            "contact": "+964 770 123 1234"
+        },
+        {
+            "id": 6,
+            "name": "Property 6",
+            "address": "789 Broadway",
+            "imageUrl": "/stockHouse.jpg",
+            "lat": 35.56964479232118,
+            "lng": 45.386453312323745,
+            "description": "This is where the expendable area is.",
+            "extraImages": [
+                "/interior.jpg",
+                "/bedroom.jpg",
+                "/bathroom.jpg"
+            ],
+            "price": "50 000 USD",
+            "floors": 3,
+            "bedrooms": 5,
+            "kitchen": 1,
+            "hotKitchen": "Yes",
+            "direction": "Pak City A5/15",
+            "area": "150 sqm",
+            "contact": "+964 770 123 1234"
+        },
+        {
+            "id": 7,
+            "name": "Property 7",
+            "address": "123 Main St",
+            "imageUrl": "/stockHouse.jpg",
+            "lat": 35.56964479232118,
+            "lng": 45.386453312323745,
+            "description": "This is where the expendable area is.",
+            "extraImages": [
+                "/interior.jpg",
+                "/bedroom.jpg",
+                "/bathroom.jpg"
+            ],
+            "price": "50 000 USD",
+            "floors": 3,
+            "bedrooms": 5,
+            "kitchen": 1,
+            "hotKitchen": "Yes",
+            "direction": "Pak City A5/15",
+            "area": "150 sqm",
+            "contact": "+964 770 123 1234"
+        },
+        {
+            "id": 8,
+            "name": "Property 8",
+            "address": "456 Park Ave",
+            "imageUrl": "/stockHouse.jpg",
+            "lat": 35.56964479232118,
+            "lng": 45.386453312323745,
+            "description": "This is where the expendable area is.",
+            "extraImages": [
+                "/interior.jpg",
+                "/bedroom.jpg",
+                "/bathroom.jpg"
+            ],
+            "price": "50 000 USD",
+            "floors": 3,
+            "bedrooms": 5,
+            "kitchen": 1,
+            "hotKitchen": "Yes",
+            "direction": "Pak City A5/15",
+            "area": "150 sqm",
+            "contact": "+964 770 123 1234"
+        },
+        {
+            "id": 9,
+            "name": "Property 9",
+            "address": "789 Broadway",
+            "imageUrl": "/stockHouse.jpg",
+            "lat": 35.56964479232118,
+            "lng": 45.386453312323745,
+            "description": "This is where the expendable area is.",
+            "extraImages": [
+                "/interior.jpg",
+                "/bedroom.jpg",
+                "/bathroom.jpg"
+            ],
+            "price": "50 000 USD",
+            "floors": 3,
+            "bedrooms": 5,
+            "kitchen": 1,
+            "hotKitchen": "Yes",
+            "direction": "Pak City A5/15",
+            "area": "150 sqm",
+            "contact": "+964 770 123 1234"
+        },
+        {
+            "id": 10,
+            "name": "Property 10",
+            "address": "789 Broadway",
+            "imageUrl": "/stockHouse.jpg",
+            "lat": 35.56964479232118,
+            "lng": 45.386453312323745,
+            "description": "This is where the expendable area is.",
+            "extraImages": [
+                "/interior.jpg",
+                "/bedroom.jpg",
+                "/bathroom.jpg"
+            ],
+            "price": "50 000 USD",
+            "floors": 3,
+            "bedrooms": 5,
+            "kitchen": 1,
+            "hotKitchen": "Yes",
+            "direction": "Pak City A5/15",
+            "area": "150 sqm",
+            "contact": "+964 770 123 1234"
+        }
+    ]
+}
