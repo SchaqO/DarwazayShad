@@ -1,0 +1,14 @@
+:host {
+    display: flex;
+    flex-direction: column; /* Stack navbar and routed component vertically */
+}
+
+app-navbar {
+    flex: 0 0 auto; /* Navbar takes up only its height */
+}
+
+router-outlet {
+    flex: 1; /* Router outlet takes up remaining space */
+    overflow: auto; /* Prevents content overflow in the router outlet */
+    height: calc(100vh - 9.5em);
+}
